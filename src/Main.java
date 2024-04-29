@@ -5,7 +5,7 @@ public class Main {
         try {
             Service.check("Alexandr_02", "aB123456789", "aB123456789");
         } catch (WrongLoginException | WrongPasswordException e) {
-            System.out.println("Неверный логин или пароль");
+            System.out.println("Неверный логин или пароль: "  + e.getMessage());
         }
     }
 }
